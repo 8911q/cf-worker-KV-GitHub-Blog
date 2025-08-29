@@ -1,0 +1,12 @@
+name = "my-blog-worker"              # 你的 Worker 名称
+main = "workers.js"                  # Worker 入口文件
+compatibility_date = "2025-08-29"    # 按当天日期填写
+
+# KV 命名空间绑定
+kv_namespaces = [
+  { binding = "BLOG_CACHE", id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" }
+]
+
+[vars]
+GITHUB_TOKEN = "your_github_token"   # 你的 GitHub Token
+ADMIN_KEY = "your_admin_password"    # 后台管理密码
